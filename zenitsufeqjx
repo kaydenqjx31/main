@@ -125,7 +125,7 @@ bbav = Instance.new("BodyAngularVelocity",bullet)
  
 local Player=game.Players.LocalPlayer local Character=workspace.non local hum = Character.Humanoid local LeftArm=Character["Left Arm"] local LeftLeg=Character["Left Leg"] local RightArm=Character["Right Arm"] local RightLeg=Character["Right Leg"] local Root=Character["HumanoidRootPart"] local Head=Character["Head"] local Torso=Character["Torso"] local Neck=Torso["Neck"] local mouse = Player:GetMouse() local position = nil local sine = 0 local t = 0 local change = 1
  
-Character.Humanoid.WalkSpeed = Walkspeed
+Character.Humanoid.WalkSpeed = 19
  
 local HEADLERP = Instance.new("ManualWeld")
 HEADLERP.Parent = Head
@@ -188,13 +188,13 @@ m = game.Players.LocalPlayer:GetMouse()
  
 m.KeyDown:connect(function(k)
 if k == "q" then
-Character.Humanoid.WalkSpeed = RuningWalkspeed
+Character.Humanoid.WalkSpeed = 30
 end
 end)
  
 m.KeyUp:connect(function(k)
 if k == "q" then
-Character.Humanoid.WalkSpeed = Walkspeed
+Character.Humanoid.WalkSpeed = 19
 end
 end)
  
